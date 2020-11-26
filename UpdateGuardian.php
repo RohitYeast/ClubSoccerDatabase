@@ -11,7 +11,7 @@
       echo "Failed to connect to MySQL: " . mysqli_connect_error();
       }
       
-    $result = mysqli_query($con,"SELECT * FROM Guardian where Phone='".$phone."');
+    $result = mysqli_query($con,"SELECT * FROM Guardian where Phone='".$phone);
 
      while($row = mysqli_fetch_array($result))
       {
