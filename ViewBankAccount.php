@@ -26,6 +26,8 @@ if ($_GET["job"] == "delete"){
 
 $result = mysqli_query($con,"SELECT * FROM BankAccount");
 
+                           echo "<table border='1'><tr><th>ID</th><th>Name</th><th>Email</th></tr>";
+                           
 while($row = mysqli_fetch_array($result))
   {
   echo "<tr>";
