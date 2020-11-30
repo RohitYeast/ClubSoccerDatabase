@@ -40,8 +40,8 @@
         echo "<td>" . $row['AccountNumber'] . "</td>";
         echo "<td>" . $row['TrainerName'] . "</td>";
         echo "<td>" . $row['TrainerCompany'] . "</td>";
-        echo "<td><a href='update.php?ID= " . $row['TeamName'] . "'>Update</a></td>";
-        echo "<td><a onClick= \"return confirm('Do you want to delete this user?')\" href='view.php?job=delete&amp;ID= " . $row['TeamName'] . "'>DELETE</a></td>";
+        echo "<td><a href='UpdateTeam.php?ID= " . $row['TeamName'] . "'>Update</a></td>";
+        echo "<td><a onClick= \"return confirm('Do you want to delete this user?')\" href='ViewTeam.php?job=delete&amp;ID= " . $row['TeamName'] . "'>DELETE</a></td>";
         echo "</tr>";
     }
     echo "</table>";

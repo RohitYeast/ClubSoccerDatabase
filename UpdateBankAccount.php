@@ -18,7 +18,7 @@
      
 ?>
      
-     <form action="view.php?job=update" method="post">
+     <form action="ViewBankAccount.php?job=update" method="post">
        BranchNo: <input type="number" name="BranchNo" value='<?php echo $row['BranchNo'];?>'><br>
        InstitutionNo: <input type="number" name="InstitutionNo" value='<?php echo $row['InstitutionNo'];?>'><br>
        AccountNumber: <input type="number" name="AccountNumber" value='<?php echo $row['AccountNumber'];?>'><br>
@@ -29,5 +29,5 @@
 
     }
 
-    mysqli_close->$con;
+    mysqli_close($con);
 ?>

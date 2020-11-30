@@ -18,7 +18,7 @@
         
 ?>
         
-      <form action = "view.php?job=update" method="post">
+      <form action = "ViewTeam.php?job=update" method="post">
         TeamName: <input type = "text" name = "TeamName" value = '<?php echo $row['TeamName'];?>'><br>
         Tier: <input type = "text" name = "Tier" value = '<?php echo $row['Tier'];?>'><br>
         CurrentAgeGroup: <input type = "text" name = "CurrentAgeGroup" value = '<?php echo $row['CurrentAgeGroup'];?>'><br>
@@ -32,5 +32,5 @@
 
     }
 
-    mysqli_close->$con;
+    mysqli_close($con);
 ?>

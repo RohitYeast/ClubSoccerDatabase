@@ -17,7 +17,7 @@
          
 ?>
          
-      <form action="view.php?job=update" method="post">
+      <form action="ViewField.php?job=update" method="post">
         Address: <input type = "text" name = "Address" value = '<?php echo $row['Address'];?>'><br>
         TurfNotGrass: <input type = "checkbox" name = "TurfNotGrass" value = '<?php echo $row['TurfNotGrass'];?>'><br>
         PracticeNotGame: <input type = "checkbox" name = "PracticeNotGame" value = '<?php echo $row['PracticeNotGame'];?>'><br>
@@ -27,5 +27,5 @@
       
 <?php
     }
-    mysqli_close->$con;
+    mysqli_close($con);
 ?>

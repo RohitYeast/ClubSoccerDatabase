@@ -18,7 +18,7 @@
      
 ?>
      
-     <form action="view.php?job=update" method="post">
+     <form action="ViewGuardian.php?job=update" method="post">
        Email: <input type="text" name="Email" value='<?php echo $row['Email'];?>'><br>
        Relationship: <input type="text" name="Relationship" value='<?php echo $row['Relationship'];?>'><br>
        Phone: <input type="number" name="Phone" value='<?php echo $row['Phone'];?>'><br>
@@ -29,5 +29,5 @@
 
     }
 
-    mysqli_close->$con;
+    mysqli_close($con);
 ?>
