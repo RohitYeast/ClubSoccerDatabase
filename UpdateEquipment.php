@@ -18,7 +18,7 @@
      
 ?>
      
-     <form action="view.php?job=update" method="post">
+     <form action="ViewEquipment.php?job=update" method="post">
        NumCones: <input type="number" name="NumCones" value='<?php echo $row['NumCones'];?>'><br>
        NumPinnies: <input type="number" name="NumPinnies" value='<?php echo $row['NumPinnies'];?>'><br>
        TeamName: <input type="text" name="TeamName" value='<?php echo $row['TeamName'];?>'><br>
@@ -30,5 +30,5 @@
 
     }
 
-    mysqli_close->$con;
+    mysqli_close($con);
 ?>

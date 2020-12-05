@@ -8,7 +8,7 @@
     $con= new mysqli("localhost","root","desiree00","CNSClubDatabase");
 
     // Check connection
-    if ($con->connect_error)
+    if (mysqli_connect_errno($con))
       {
       echo "Failed to connect to MySQL: " . mysqli_connect_error();
       }
@@ -18,7 +18,7 @@
     
      if (!mysqli_query($con,$sql))
       {
-      die('Error: ' . $con->connect_error);
+      die('Error: ' . mysqli_error($con));
       }
       
     echo "1 record added";
