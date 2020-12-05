@@ -11,14 +11,14 @@
       echo "Failed to connect to MySQL: " . mysqli_connect_error();
       }
       
-    $result = mysqli_query($con,"SELECT * FROM Users where EquipmentID='".$equipmentID."');
+    $result = mysqli_query($con,"SELECT * FROM Users where EquipmentID='".$equipmentID"'");
 
      while($row = mysqli_fetch_array($result))
       {
      
 ?>
      
-     <form action="view.php?job=update" method="post">
+     <form action="ViewEquipment.php?job=update" method="post">
        NumCones: <input type="number" name="NumCones" value='<?php echo $row['NumCones'];?>'><br>
        NumPinnies: <input type="number" name="NumPinnies" value='<?php echo $row['NumPinnies'];?>'><br>
        TeamName: <input type="text" name="TeamName" value='<?php echo $row['TeamName'];?>'><br>
@@ -30,5 +30,5 @@
 
     }
 
-    mysqli_close->$con;
+    mysqli_close($con);
 ?>

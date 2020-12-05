@@ -11,14 +11,14 @@
       echo "Failed to connect to MySQL: " . mysqli_connect_error();
       }
       
-    $result = mysqli_query($con,"SELECT * FROM Guardian where Phone='".$phone."');
+    $result = mysqli_query($con,"SELECT * FROM Guardian where Phone='".$phone"'");
 
      while($row = mysqli_fetch_array($result))
       {
      
 ?>
      
-     <form action="view.php?job=update" method="post">
+     <form action="ViewGuardian.php?job=update" method="post">
        Email: <input type="text" name="Email" value='<?php echo $row['Email'];?>'><br>
        Relationship: <input type="text" name="Relationship" value='<?php echo $row['Relationship'];?>'><br>
        Phone: <input type="number" name="Phone" value='<?php echo $row['Phone'];?>'><br>
@@ -29,5 +29,5 @@
 
     }
 
-    mysqli_close->$con;
+    mysqli_close($con);
 ?>

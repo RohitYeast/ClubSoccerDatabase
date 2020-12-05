@@ -12,7 +12,7 @@
       echo "Failed to connect to MySQL: " . mysqli_connect_error();
       }
       
-    $result = mysqli_query($con,"SELECT * FROM Users where FirstName='".$fname "', . Lastname= '".$lname);
+    $result = mysqli_query($con,"SELECT * FROM Users where FirstName='".$fname "', . Lastname= '".$lname"'");
 
      while($row = mysqli_fetch_array($result))
       {

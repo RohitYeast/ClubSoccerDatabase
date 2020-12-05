@@ -17,7 +17,7 @@ if ($con->connect_error)
   echo "Failed to connect to MySQL: " . mysqli_connect_error();
   }
   
-  $sql = "INSERT INTO users (FirstName, LastName, Phone, Gender, Email) VALUES ('". $fname."', '". $lname."', '". $phono."','". $gender."''". $email ."')";
+  $sql = "INSERT INTO users (FirstName, LastName, Phone, Gender, Email) VALUES ('". $fname."', '". $lname."', '". $phono."','". $gender."','". $email ."')";
  
  if (!mysqli_query($con,$sql))
   {
